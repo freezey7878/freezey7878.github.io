@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>The Cardiff Parks Puzzle Trail - Contact Us</title>
+	<meta name="description" content="Issues or feedback relating to the Cardiff Parks Puzzle Trail app can be sent from the Contact Us page.">
+		<link href="https://fonts.googleapis.com/css?family=Exo+2|Russo+One|Staatliches" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+	<!-- Fonts: The Cardiff Parks Puzzle Trail -->
+	<link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Euphoria+Script" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/site.css">
+
+	<!-- Required for Captcha on Contact Us and Feedback pages -->
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+
+	<!-- Headings Start ----------------------------------------------------------------------------- -->
+	<div class="clsHeading">
+		<span class="clsHeadingUpper">The Cardiff Parks</span>
+		<br>
+		<span class="clsHeadingLower">Puzzle Trail</span>
+	</div>
+	<!-- Headings End ------------------------------------------------------------------------------- -->
+
+	<!-- Menu Start --------------------------------------------------------------------------------- -->
+	<div class="clsCenter">
+		<div id="divMenuBar">
+			<a class="clsMenuBarLink" href="index.html">Home</a> 
+			<a class="clsMenuBarLink" href="privacy_policy.html">Privacy Policy</a>
+			<a class="clsMenuBarLink" href="terms_and_conditions.html">Terms & Conditions</a>
+			<a class="clsMenuBarLink" href="contact_us.html">Contact Us</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+	var strPath = window.location.pathname;
+	var strPage = strPath.split("/").pop();
+
+	var arrElements = document.getElementById("divMenuBar").getElementsByTagName("a");
+
+	var bolMatch = false;
+	//Loop until we reach a null pointer
+	for (intIndex = 0; intIndex < arrElements.length; intIndex++) 
+	{
+		elmCurrent = arrElements[intIndex];
+
+		if (elmCurrent.getAttribute("href") == strPage)
+		{
+			elmCurrent.classList.add("clsMenuBarLinkCurrent");
+			bolMatch = true;
+		}
+	}
+
+	if(!bolMatch) window.location.replace("index.html");
+	</script>
+	<!-- Menu End ----------------------------------------------------------------------------------- -->
+
+	<div class="clsPage">
+		<h1>Contact Us</h1>
+		<h2>
+			<i>e-mail:</i> 
+			<br>
+			feedback@cardiff-puzzle-trail.co.uk
+		</h2>	
+	</div>
+
+	<!-- Footer Start ----------------------------------------------------------------------------- -->
+	<div class="clsCenter">
+		<div id="divBreak">
+			&nbsp;
+		</div>
+		<div id="divFooter">
+			Developed by Xplora Consultancy Ltd
+		</div>		
+	</div>
+	<!-- Footer End ----------------------------------------------------------------------------- -->
+
+
+<script type="text/javascript" >
+//Get URL values into JSON
+//-------------------------------------------------------------------------------------------------
+//Split query from url
+var query_string = window.location.search.substring(1);
+
+//DEBUG MODE
+//var query_string = "lstSubject=ISSUE&lstPuzId=7";
+//var query_string = "POST_STATUS=true";
+
+var parsed_qs = parse_query_string(query_string);
+
+//Set form data fields using URL values
+//-------------------------------------------------------------------------------------------------
+//Attempt to find and set any form fields that have values defined in the URL parameters
+for (var key in parsed_qs) 
+{
+	var elmFormField = document.getElementById(key);
+
+	if(elmFormField != null && elmFormField != undefined)
+	{
+		elmFormField.value = parsed_qs[key];
+	}
+}
+
+//Return functions
+//-------------------------------------------------------------------------------------------------
+//If the page is opened as a return post from a submitted for popup a message
+if(parsed_qs.POST_STATUS.toLowerCase() == "true")
+{
+	window.alert("Thank you for your feedback.");
+}
+if(parsed_qs.POST_STATUS.toLowerCase() == "false")
+{
+	window.alert("Sorry, a technical problem was encountered while submitting your feedback.\nPlease try again later.");
+}
+
+//Valudation functions
+//-------------------------------------------------------------------------------------------------
+function validateForm() {
+
+	var bolValid = true;
+
+	//Remove spaces and line breaks
+	var strComment = document.getElementById("txtComment").value.replace(/ |\r|\n/gi, "");
+	var strEmail = document.getElementById("txtEmail").value.replace(/ /gi, "");
+
+	//Comments can not be blank or just spaces
+	if(strComment == "")
+	{
+		window.alert("Please enter a comment, before pressing 'Send'.");
+		bolValid = false;
+	}
+
+	//If an e-mail address provided check the format again a regex
+	if(strEmail != "" && !validateEmail(strEmail))
+	{
+		window.alert("Please leave e-mail address blank or enter a valid e-mail address, before pressing 'Send'.");
+		bolValid = false;
+	}
+
+	return bolValid;
+}
+
+//Utility functions
+//-------------------------------------------------------------------------------------------------
+function parse_query_string(query) {
+
+	var vars = query.split("&");
+	var query_string = {};
+
+	for (var i = 0; i < vars.length; i++) {
+		var pair = vars[i].split("=");
+		var key = decodeURIComponent(pair[0]);
+		var value = decodeURIComponent(pair[1]);
+		// If first entry with this name
+		if (typeof query_string[key] === "undefined") {
+			query_string[key] = decodeURIComponent(value);
+			// If second entry with this name
+		} else if (typeof query_string[key] === "string") {
+			var arr = [query_string[key], decodeURIComponent(value)];
+			query_string[key] = arr;
+			// If third or later entry with this name
+		} else {
+			query_string[key].push(decodeURIComponent(value));
+		}
+	}
+	return query_string;
+}
+
+function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+</script>
+
+
+</body>
+</html>

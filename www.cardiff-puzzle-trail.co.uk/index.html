@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>The Cardiff Parks Puzzle Trail - Home Page</title>
+	<meta name="description" content="The Cardiff Puzzle Trail is a mobile game where players follow a trail through the parks 
+	 surrounding Cardiff castle, using what they see in the architecture and points of interest to 
+	 solve puzzles on their smart phones or tablets.">
+		<link href="https://fonts.googleapis.com/css?family=Exo+2|Russo+One|Staatliches" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+	<!-- Fonts: The Cardiff Parks Puzzle Trail -->
+	<link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Euphoria+Script" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/site.css">
+
+	<!-- Required for Captcha on Contact Us and Feedback pages -->
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+
+	<!-- Headings Start ----------------------------------------------------------------------------- -->
+	<div class="clsHeading">
+		<span class="clsHeadingUpper">The Cardiff Parks</span>
+		<br>
+		<span class="clsHeadingLower">Puzzle Trail</span>
+	</div>
+	<!-- Headings End ------------------------------------------------------------------------------- -->
+
+	<!-- Menu Start --------------------------------------------------------------------------------- -->
+	<div class="clsCenter">
+		<div id="divMenuBar">
+			<a class="clsMenuBarLink" href="index.html">Home</a> 
+			<a class="clsMenuBarLink" href="privacy_policy.html">Privacy Policy</a>
+			<a class="clsMenuBarLink" href="terms_and_conditions.html">Terms & Conditions</a>
+			<a class="clsMenuBarLink" href="contact_us.html">Contact Us</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+	var strPath = window.location.pathname;
+	var strPage = strPath.split("/").pop();
+
+	var arrElements = document.getElementById("divMenuBar").getElementsByTagName("a");
+
+	var bolMatch = false;
+	//Loop until we reach a null pointer
+	for (intIndex = 0; intIndex < arrElements.length; intIndex++) 
+	{
+		elmCurrent = arrElements[intIndex];
+
+		if (elmCurrent.getAttribute("href") == strPage)
+		{
+			elmCurrent.classList.add("clsMenuBarLinkCurrent");
+			bolMatch = true;
+		}
+	}
+
+	if(!bolMatch) window.location.replace("index.html");
+	</script>
+	<!-- Menu End ----------------------------------------------------------------------------------- -->
+
+
+	<!-- Description & Phones Start ----------------------------------------------------------------- -->
+	<div id="divPortraitGameDescription" class="clsGameDescription">
+		The Cardiff Puzzle Trail is a mobile game where players follow a trail through the parks 
+		surrounding Cardiff castle, using what they see in the architecture and points of interest to 
+		solve puzzles on their smart phones or tablets.
+	</div>
+	<div id="divPortraitPhonesContainer">
+		<div class="clsPhone clsDistance    clsPhoneSmall  clsSlide clsSlideLeft35To1"></div>
+		<div class="clsPhone clsPuzzleThree clsPhoneMedium clsSlide clsSlideLeft35To15"></div>
+		<div class="clsPhone clsMainMenu    clsPhoneLarge"></div>
+		<div class="clsPhone clsPuzzleSeven clsPhoneMedium clsSlide clsSlideLeft35To51"></div>
+		<div class="clsPhone clsGoogleMaps  clsPhoneSmall  clsSlide clsSlideLeft35To67"></div>
+	</div>
+
+	<div id="divLandscapePhonesContainer">
+		<table style="width:100%;" cellpadding="8%">
+			<tr>
+				<td class="clsLandscapePhoneContainer">
+					<div class="clsPhone clsPhoneMedium clsDistance clsSlide clsSlideRight0To35"></div>
+					<div class="clsPhone clsPhoneLarge  clsMainMenu clsSlide"></div>
+				</td>
+				<td class="clsGameDescription">
+					The Cardiff Puzzle Trail is a mobile game where players follow a trail through the parks 
+					surrounding Cardiff castle, using what they see in the architecture and points of interest to 
+					solve puzzles on their smart phone or tablet.
+				</td>
+				<td class="clsLandscapePhoneContainer">
+					<div class="clsPhone clsPhoneLarge  clsPuzzleSeven clsSlide"></div>
+					<div class="clsPhone clsPhoneMedium clsGoogleMaps  clsSlide clsSlideLeft0To35"></div>			
+				</td>
+			</tr>
+		</table>
+	</div>
+	<!-- Description & Phones End ------------------------------------------------------------------- -->
+
+	<!-- App Store Start ---------------------------------------------------------------------------- -->
+	<div width="100%" class="clsVerticalSpacer"></div>
+
+	<!--
+	<div width="100%" class="clsCirclePositioner">
+
+		<div class="clsCircle"></div>
+
+		<table class="clsAppStores">
+			<tr>
+				<td class="clsAppStoreIcon">
+					<a class="clsAppStore" target=”_blank” href="https://play.google.com/store/apps/details?id=uk.co.cardiff_puzzle_trail">
+						<div class="clsAppStoreAndroid clsAppStoreAndroidLeft">
+								&nbsp;
+						</div>
+					</a>
+				</td>
+				<td class="clsAppStoreFree">
+					Free!
+				</td>
+				<td class="clsAppStoreIcon">
+					<a class="clsAppStore" target=”_blank” href="https://play.google.com/store/apps/details?id=uk.co.cardiff_puzzle_trail">
+						<div class="clsAppStoreAndroid clsAppStoreAndroidRight">
+								&nbsp;
+						</div>
+					</a>
+				</td>
+			</tr>
+		</table>
+
+	</div>
+	-->
+
+	<!-- App Store End ------------------------------------------------------------------------------ -->
+
+
+	<!-- Footer Start ----------------------------------------------------------------------------- -->
+	<div class="clsCenter">
+		<div id="divBreak">
+			&nbsp;
+		</div>
+		<div id="divFooter">
+			Developed by Xplora Consultancy Ltd
+		</div>		
+	</div>
+	<!-- Footer End ----------------------------------------------------------------------------- -->
+
+
+</body>
+</html>

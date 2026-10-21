@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>The Cardiff Parks Puzzle Trail - Privacy Policy</title>
+	<meta name="description" content="The collection and use of data by The Cardiff Parks Puzzle Trail application is detailed in our privacy policy.  
+	 No data is collected, processed or shared.">
+		<link href="https://fonts.googleapis.com/css?family=Exo+2|Russo+One|Staatliches" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+	<!-- Fonts: The Cardiff Parks Puzzle Trail -->
+	<link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Euphoria+Script" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/site.css">
+
+	<!-- Required for Captcha on Contact Us and Feedback pages -->
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+
+	<!-- Headings Start ----------------------------------------------------------------------------- -->
+	<div class="clsHeading">
+		<span class="clsHeadingUpper">The Cardiff Parks</span>
+		<br>
+		<span class="clsHeadingLower">Puzzle Trail</span>
+	</div>
+	<!-- Headings End ------------------------------------------------------------------------------- -->
+
+	<!-- Menu Start --------------------------------------------------------------------------------- -->
+	<div class="clsCenter">
+		<div id="divMenuBar">
+			<a class="clsMenuBarLink" href="index.html">Home</a> 
+			<a class="clsMenuBarLink" href="privacy_policy.html">Privacy Policy</a>
+			<a class="clsMenuBarLink" href="terms_and_conditions.html">Terms & Conditions</a>
+			<a class="clsMenuBarLink" href="contact_us.html">Contact Us</a>
+		</div>
+	</div>
+	<script type="text/javascript">
+	var strPath = window.location.pathname;
+	var strPage = strPath.split("/").pop();
+
+	var arrElements = document.getElementById("divMenuBar").getElementsByTagName("a");
+
+	var bolMatch = false;
+	//Loop until we reach a null pointer
+	for (intIndex = 0; intIndex < arrElements.length; intIndex++) 
+	{
+		elmCurrent = arrElements[intIndex];
+
+		if (elmCurrent.getAttribute("href") == strPage)
+		{
+			elmCurrent.classList.add("clsMenuBarLinkCurrent");
+			bolMatch = true;
+		}
+	}
+
+	if(!bolMatch) window.location.replace("index.html");
+	</script>
+	<!-- Menu End ----------------------------------------------------------------------------------- -->
+
+
+	<div class="clsPage clsLegalText">
+		<h1>Privacy Policy</h1>
+
+		<h2>Introduction</h2>
+		Xplora Consultancy Limit (Xplora Consultancy, our, we or us) care about the privacy of your (players, users or customers) personal information.  A foundation principle in our software design is to avoid unnecessary access, processing or collection of your information.  A detailed explanation of our data collection and use is as follows.<br>
+		<hr>
+
+		<h2>Information you provide playing the game</h2>
+		The information you enter while playing the game is held on your device (smart phone, tablet or computer).  The entirety of this information is below:
+		<ul>
+			<li>Team name.  This is required to different games on the high scores screen.  It's recommended that you choose a name that doesn't contain any personal information such as you first or last name.</li>
+		</ul>
+		All other information entered would be considered either:
+		<ul>
+			<li>Puzzle answers, i.e. fixed responses that do not offer personal insight.</li>
+			<li>Preference setting, e.g. game route through Cardiff.</li>
+		</ul>
+		<hr>
+
+		<h2>Information automatically collected playing the game</h2>
+		The game records the date and time when each puzzle was solved or skipped, this information is required to calculate the players score.  Because the puzzles are associated with a geographical location it is possible to assume the players location at a specific date and time from the data.   However, it is an assumption because no GPS data is collected, meaning the player can complete the game from anywhere, if they knew the answers, without even visiting Cardiff or the relevant locations.  E.g. if you correctly answer the question "How many floors are in the Empire State Building" it doesn't mean you're present in New York at that moment. 
+		<hr>
+
+		<h2>Information removal from the game</h2>
+		All information recording in The Cardiff Parks Puzzle Trail application (preference settings, team names and previous game scores) can be deleted at any time by the user.
+		<hr>
+
+		<h2>Information we collect</h2>
+		No data is send from your device to us.  Because no data is sent we do not receive, retain or process any of your data, personal or otherwise.
+		<hr>
+
+		<h2>Information we share</h2>
+		No data is shared, refer to "Information we collect" for further explanation.
+		<hr>
+
+		<h2>Information for marketing</h2>
+		No data is used for marketing purpose, refer to "Information we collect" for further explanation.
+		<hr>
+
+		<h2>Resources on your device</h2>
+		The Cardiff Parks Puzzle Trail application requires access to the following device resources:
+		<ul>
+			<li>Read and write to media.  This is require to save your application settings and scores.</li>
+			<li>Access to Maps app.  This is required to display the location of each puzzle.</li>
+			<li>Access to Browser app.  This is required to display the location of each puzzle, if your device does not have a Maps application.</li>
+		</ul>
+		<br>
+	</div>
+
+
+	<!-- Footer Start ----------------------------------------------------------------------------- -->
+	<div class="clsCenter">
+		<div id="divBreak">
+			&nbsp;
+		</div>
+		<div id="divFooter">
+			Developed by Xplora Consultancy Ltd
+		</div>		
+	</div>
+	<!-- Footer End ----------------------------------------------------------------------------- -->
+
+
+</body>
+</html>

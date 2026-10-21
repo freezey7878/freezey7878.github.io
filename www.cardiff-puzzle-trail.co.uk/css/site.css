@@ -1,0 +1,702 @@
+
+.clsFontRoboto
+{
+	font-family: 'Roboto', sans-serif;
+}
+
+.clsMenuBarLink
+{
+	padding-left:2%;
+	padding-right:2%;
+	color: #f2f2f2;
+	text-decoration: none;
+}
+.clsMenuBarLinkCurrent
+{
+	background-color:#303030;
+	border-left: 0.16em solid #f2f2f2;
+	border-right: 0.16em solid #f2f2f2;
+}
+/* mouse over link */
+a:hover 
+{
+	color: white;
+	text-decoration: underline;
+}
+
+/* *************************************************************************************************	 
+ *                                                                                       Store Links
+ * ************************************************************************************************/
+div.clsVerticalSpacer
+{
+	padding-top:5%;
+}
+div.clsCirclePositioner
+{
+	position:relative; 
+	padding-bottom:36%;
+}
+div.clsCircle
+{
+	z-index: 100;
+	position:absolute;
+	width:30%;
+	left: 35%;
+	right: 35%;
+	padding-top:30%;
+	background-color: rgb(232, 30, 37);
+	border-radius: 50%;
+	display: inline-block;
+}
+table.clsAppStores
+{
+	width:100%;
+	z-index: 200; 
+	position:absolute; 
+	top: 22%;
+}
+
+/*
+div.clsAppStoreAndroid
+{
+	background-position: right;
+	width:100%;
+	background-size: 80% auto;
+	background-repeat: no-repeat;
+	background-image: url('../images/GoogleStore.png'); 
+	padding-bottom:30%;
+}
+div.clsAppStoreApple
+{
+	position:relative;
+	background-position: left;
+	width:100%;
+	background-size: 80% auto;
+	background-repeat: no-repeat;
+	background-image: url('../images/AppleStore.png'); 
+	padding-bottom:30%;
+}
+*/
+div.clsAppStoreAndroid
+{
+	width:100%;
+	background-size: 80% auto;
+	background-repeat: no-repeat;
+	background-image: url('../images/GoogleStore.png'); 
+	padding-bottom:30%;
+}
+div.clsAppStoreAndroidLeft
+{
+	background-position: right;
+}
+div.clsAppStoreAndroidRight
+{
+	background-position: left;
+}
+
+div.clsAppStoreLabel
+{
+	position:absolute;
+	top:28%;
+	left:23%;
+	text-align:center;
+	background-color:rgb(63,72,204);
+	font-size:3vw;
+	-webkit-transform: rotate(40deg);
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 6%;
+	padding-right: 6%;
+	
+	line-height: 86%;
+	font-family: 'Baloo', cursive;
+}
+
+td.clsAppStoreFree
+{
+	padding-left:1%;
+	padding-right:1%;
+	text-align:center;
+	width:20%;
+	white-space: nowrap;
+	font-size:8vw;
+	font-family: 'Baloo', cursive;
+	font-style: italic;
+}
+/*
+td.clsAppStorePrice
+{
+	padding-left:1%;
+	padding-right:1%;
+	text-align:center;
+	width:20%;
+	white-space: nowrap;
+	font-size:4vw;
+	font-family: 'Baloo', cursive;
+	font-style: italic;
+}
+*/
+
+td.clsAppStoreIcon
+{
+	width:40%;
+}
+a.clsAppStore:hover
+{
+	color: white;
+	text-decoration: none;
+}
+span.clsPrice
+{
+	font-weight: bold;
+	font-style: normal;
+}
+
+/* =================================================================================================================== */
+
+
+@media only screen and (orientation: portrait) 
+{
+	div.clsHeading
+	{
+		width:100%;
+		background-size: auto 90%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-image: url('../images/PuzzleIcone_512px_v2.png');  
+		text-align: center;
+		margin-bottom: 1%;
+		padding-top:2%;
+		padding-bottom:2%;
+	}
+	span.clsHeadingUpper
+	{
+		font-family: 'Caveat Brush', cursive;
+		color: white;
+		text-shadow: 0 0 1vw black, 0 0 1vw black;
+		font-size: 4vw;
+	}
+	span.clsHeadingLower
+	{
+		font-family: 'Euphoria Script', cursive;
+		color: white;
+		text-shadow: 0 0 1vw black, 0 0 1vw black;
+		font-size: 10vw;
+	}
+
+	#divPortraitGameDescription {display: block;}
+	#divPortraitPhonesContainer {display: block;}
+	#divLandscapePhonesContainer {display: none;}
+
+	body {
+		margin-left:0;
+		margin-right:0;
+		color:#f2f2f2;
+		background-color:#303030;
+	}
+	div.clsPage {
+		font-family: 'Roboto Slab', serif;
+		margin-left:2%;
+		margin-right:2%;
+	}
+	div.clsCenter
+	{
+		text-align: center;
+		margin-left:auto;
+		margin-right:auto;
+	}
+
+	#divMenuBar
+	{
+		font-family: 'Staatliches', cursive;
+		width:100%;
+		text-align: center;
+		font-size:4vw;
+		background-color:#898989;
+	}
+	#divBreak
+	{
+		font-size:0.2em;
+		background-color:#898989;
+	}
+
+	#divFooter
+	{
+		text-align:center;
+		width:100%;
+		padding-top:0.2vw;
+		font-style: italic;
+		font-size:1.8vw;
+		color:#f2f2f2;
+	}
+
+	/* *************************************************************************************************
+	 *                                                                                          Headings
+	 * ************************************************************************************************/
+	h1
+	{
+		font-size:8vw;
+		text-align: center;
+		font-family: 'Roboto Slab', serif;
+	}
+	h2
+	{
+		font-size:5vw;
+		font-family: 'Roboto Slab', serif;
+	}
+
+	/* *************************************************************************************************	 
+	 *                                                                                              Home
+	 * ************************************************************************************************/
+	.clsGameDescription
+	{
+		display: block;
+		font-family: 'Roboto Slab', serif;
+		font-size:4vw;
+		padding-top:2%;
+		padding-bottom:2%;
+		text-align:center;
+	}
+
+	div.clsPhoneLarge
+	{
+		width:38%;
+		padding-bottom:76.92%;
+	}
+	div.clsPhoneMedium
+	{
+		margin-top:4%;
+		width:34%;
+		padding-bottom:68.82%;
+	}
+	div.clsPhoneSmall
+	{
+		margin-top:6%;
+		width:32%;
+		padding-bottom:64.77%;
+	}
+
+	#divPortraitPhonesContainer
+	{
+		width: 100%;
+		margin-bottom:76.92%;
+		position: relative;
+	}
+	div.clsPhone
+	{
+		position:absolute;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-position: center;     
+	}
+	.clsDistance
+	{
+		z-index: 8;
+		background-image: url('../images/distance_2.png');
+	}
+
+	.clsPuzzleThree
+	{
+		z-index: 15;
+		background-image: url('../images/puzzle_three.png');
+	}
+
+	.clsMainMenu
+	{
+		left:31%;
+		z-index: 20;
+		background-image: url('../images/main_menu.png');
+
+	}
+
+	.clsPuzzleSeven
+	{
+		z-index: 15;
+		background-image: url('../images/puzzle_seven.png');
+	}
+
+	.clsGoogleMaps
+	{
+		z-index: 8;
+		background-image: url('../images/phone_map_app_point.png');
+	}
+
+	div.clsSlide {
+		left: 31%;
+		-webkit-animation-duration: 2s;
+		-webkit-animation-direction: forwards;
+		-webkit-animation-fill-mode: forwards;
+		-webkit-animation-delay: 1.5s;
+	}
+
+	div.clsSlideLeft35To1 {
+		-webkit-animation-name: frmSlideLeft35To1;
+	}
+	div.clsSlideLeft35To15 {
+		-webkit-animation-name: frmSlideLeft35To15;
+	}
+	div.clsSlideLeft35To51 {
+		-webkit-animation-name: frmSlideLeft35To51;
+	}
+	div.clsSlideLeft35To67 {
+		-webkit-animation-name: frmSlideLeft35To67;
+	}
+
+	@-webkit-keyframes frmSlideLeft35To1 {
+		from { left: 31%; }
+		to   { left: 1%;  }
+	}
+	@-webkit-keyframes frmSlideLeft35To15 {
+		from { left: 31% }
+		to   { left: 15% }
+	}
+	@-webkit-keyframes frmSlideLeft35To51 {
+		from { left: 31% }
+		to   { left: 51% }
+	}
+	@-webkit-keyframes frmSlideLeft35To67 {
+		from { left: 31% }
+		to   { left: 67% }
+	}
+
+	/* *************************************************************************************************	 
+	 *                                                                                        PP and T&C
+	 * ************************************************************************************************/
+	.clsLegalText
+	{
+		font-size: 3vw;
+	}
+
+	/* *************************************************************************************************	 
+	 *                                                                                        Contact Us
+	 * ************************************************************************************************/
+	.clsDropDown
+	{
+	}
+	.clsTextField
+	{
+		width:95%;
+	}
+	.clsTextArea
+	{
+		width:95%;
+	}
+	.clsFormLabel
+	{
+		font-size:4vw;
+		font-family: 'Roboto Slab', serif;
+		font-weight: bold;
+	}
+
+
+	/* *************************************************************************************************	 
+	 *                                                                                          Feedback
+	 * ************************************************************************************************/
+	input.clsButton {
+		font-size: 4.5vw;
+		display: inline-block;
+		padding: 1% 1%;
+		text-align: center;
+		text-decoration: none;
+		outline: none;
+		border: none;
+		border-radius: 2em;
+		box-shadow: 0 0.3em #999;
+		color:#f2f2f2;
+		background-color:#3f6ab4;
+	}
+	select {
+		font-size: 4.5vw;
+		padding-left:1%;
+		padding-right:1%;
+		background-color: white;
+		border: 0.2em solid #3f6ab4;
+	}
+	select:focus {
+		background-color: #f7f74f;
+	}
+	input {
+		font-size: 4.5vw;
+		padding-left:1%;
+		padding-right:1%;
+		background-color: white;
+		border: 0.2em solid #3f6ab4;
+	}
+	input:focus {
+		background-color: #f7f74f;
+	}
+	textarea {
+		font-size: 4.5vw;
+		background-color: white;
+		border: 0.2em solid #3f6ab4;
+	}
+	textarea:focus {
+		background-color: #f7f74f;
+	}
+
+
+}
+
+/* =================================================================================================================== */
+
+@media only screen and (orientation: landscape) 
+{ 
+	div.clsHeading
+	{
+		width:100%;
+		background-size: auto 90%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-image: url('../images/PuzzleIcone_512px_v2.png');  
+		text-align: center;
+		margin-bottom: 1%;
+		padding-top:2%;
+		padding-bottom:2%;
+	}
+	span.clsHeadingUpper
+	{
+		font-family: 'Caveat Brush', cursive;
+		color: white;
+		text-shadow: 0 0 1vw black, 0 0 1vw black;
+		font-size: 3vw;
+	}
+	span.clsHeadingLower
+	{
+		font-family: 'Euphoria Script', cursive;
+		color: white;
+		text-shadow: 0 0 1vw black, 0 0 1vw black;
+		font-size: 8vw;
+	}
+
+	#divPortraitGameDescription {display: none;}
+	#divPortraitPhonesContainer {display: none;}
+	#divLandscapePhonesContainer {display: block;}
+
+	body {
+		margin-left:0;
+		margin-right:0;
+		color:#f2f2f2;
+		background-color:#303030;
+	}
+	div.clsPage {
+		font-family: 'Roboto Slab', serif;
+		margin-left:2%;
+		margin-right:2%;
+	}
+	div.clsCenter
+	{
+		text-align: center;
+		margin-left:auto;
+		margin-right:auto;
+	}
+
+	#divMenuBar
+	{
+		font-family: 'Staatliches', cursive;
+		width:100%;
+		text-align: center;
+		font-size:3vw;
+		background-color:#898989;
+	}
+	#divBreak
+	{
+		font-size:0.5em;
+		background-color:#898989;
+	}
+
+	#divFooter
+	{
+		text-align:center;
+		width:100%;
+		padding-top:0.2vw;
+		font-style: italic;
+		font-size:1.8vw;
+		color:#f2f2f2;
+	}
+
+	/* *************************************************************************************************	 
+	 *                                                                                          Headings
+	 * ************************************************************************************************/
+	h1
+	{
+		font-size:6vw;
+		text-align: center;
+		font-family: 'Roboto Slab', serif;
+	}
+	h2
+	{
+		font-size:3vw;
+		font-family: 'Roboto Slab', serif;
+	}
+
+	/* *************************************************************************************************	 
+	 *                                                                                              Home
+	 * ************************************************************************************************/
+	.clsGameDescription
+	{
+		font-family: 'Roboto Slab', serif;
+		font-size:2.6vw;
+		text-align:center;
+	}
+
+	div.clsPhoneLarge
+	{
+		top:5%;
+		width:70%;
+		padding-bottom:140%;
+	}
+	div.clsPhoneMedium
+	{
+		top:10%;
+		width:60%;
+		padding-bottom:120%;
+	}
+
+	td.clsLandscapePhoneContainer
+	{
+		width: 33%;
+		position: relative;
+		padding-bottom:48%;
+	}
+
+	#divPortraitContainer
+	{
+		width: 100%;
+		position: relative;
+	}
+	div.clsPhone
+	{
+		position:absolute;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-position: center;     
+	}
+	.clsDistance
+	{
+		right:0%;
+		z-index: 18;
+		background-image: url('../images/distance_2.png');
+	}
+	.clsMainMenu
+	{
+		right:0%;
+		z-index: 20;
+		background-image: url('../images/main_menu.png');
+
+	}
+
+	.clsPuzzleSeven
+	{
+		left:0%;
+		z-index: 20;
+		background-image: url('../images/puzzle_seven.png');
+	}
+
+	.clsGoogleMaps
+	{
+		left:0%;
+		z-index: 18;
+		background-image: url('../images/phone_map_app_point.png');
+	}
+
+	div.clsSlide {
+		-webkit-animation-duration: 2s;
+		-webkit-animation-direction: forwards;
+		-webkit-animation-fill-mode: forwards;
+		-webkit-animation-delay: 1.5s;
+	}
+
+	div.clsSlideLeft0To35 {
+		-webkit-animation-name: frmSlideLeft0To35;
+	}
+	div.clsSlideRight0To35 {
+		-webkit-animation-name: frmSlideRight0To35;
+	}
+
+	@-webkit-keyframes frmSlideLeft0To35 {
+		from { left: 0% }
+		to   { left: 35% }
+	}
+	@-webkit-keyframes frmSlideRight0To35 {
+		from { right: 0%; }
+		to   { right: 35%;  }
+	}
+
+	/* *************************************************************************************************	 
+	 *                                                                                        PP and T&C
+	 * ************************************************************************************************/
+	.clsLegalText
+	{
+		font-size: 2.5vw;
+	}
+
+	/* *************************************************************************************************	 
+	 *                                                                                        Contact Us
+	 * ************************************************************************************************/
+	.clsDropDown
+	{
+	}
+	.clsTextField
+	{
+		width:95%;
+	}
+	.clsTextArea
+	{
+		width:95%;
+	}
+	.clsFormLabel
+	{
+		font-size:2vw;
+		font-family: 'Roboto Slab', serif;
+		font-weight: bold;
+	}
+
+	/* *************************************************************************************************	 
+	 *                                                                                          Feedback
+	 * ************************************************************************************************/
+	input.clsButton {
+		font-size: 2.5vw;
+		display: inline-block;
+		padding: 1% 1%;
+		text-align: center;
+		text-decoration: none;
+		outline: none;
+		border: none;
+		border-radius: 2em;
+		box-shadow: 0 0.3em #999;
+		color:#f2f2f2;
+		background-color:#3f6ab4;
+	}
+	select {
+		font-size: 2.5vw;
+		padding-left:1%;
+		padding-right:1%;
+		background-color: white;
+		border: 0.2em solid #3f6ab4;
+	}
+	select:focus {
+		background-color: #f7f74f;
+	}
+	input {
+		font-size: 2.5vw;
+		padding-left:1%;
+		padding-right:1%;
+		background-color: white;
+		border: 0.2em solid #3f6ab4;
+	}
+	input:focus {
+		background-color: #f7f74f;
+	}
+	textarea {
+		font-size: 2.5vw;
+		background-color: white;
+		border: 0.2em solid #3f6ab4;
+		padding-left:1%;
+		padding-right:1%;
+	}
+	textarea:focus {
+		background-color: #f7f74f;
+	}
+
+}
+
